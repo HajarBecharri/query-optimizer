@@ -1,0 +1,24 @@
+<!-- query.component.html -->
+<div class="container">
+    <div class="input-container">
+        <input type="text" [(ngModel)]="query" placeholder="Enter your SQL query">
+        <button (click)="executeQuery()">Run</button>
+    </div>
+
+    <div *ngIf="response" class="response-container">
+        <div class="results">
+            <h3>Results:</h3>
+            <pre>{{ response.results }}</pre>
+        </div>
+
+        <div class="execution-plan">
+            <h3>Execution Plan:</h3>
+           <div *ngFor="let plan of response.executionPlan">
+            <pre>{{ plan | json }}</pre>
+            </div>
+        </div>
+    </div>
+</div>
+
+  
+  
