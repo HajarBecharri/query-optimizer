@@ -4,6 +4,9 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 interface QueryResponse {
   results: any;
   executionPlan: any;
+  queryOptimized:any;
+  excutionTime:any;
+
 }
 
 @Injectable({

@@ -3,6 +3,9 @@ import { QueryService } from 'src/app/services/query.service';
 interface QueryResponse {
   results: any;
   executionPlan: any;
+  queryOptimized:any;
+  excutionTime:any;
+
 }
 
 @Component({

@@ -93,25 +93,6 @@ def optimize_query_with_in(original_query, column_values, table_name, columns):
     return optimized_query
 
 
-# Existing arrays
-queries = [
-    "SELECT * FROM tableA WHERE conditionA;",
-    "SELECT * FROM tableB WHERE conditionB;",
-    "SELECT * FROM tableC WHERE conditionC;"
-]
 
-indexqueries = [
-    "SELECT * FROM index_table1 WHERE index_condition1;",
-    "SELECT * FROM index_table2 WHERE index_condition2;"
-]
-
-# Query string to add
-query_string = "SELECT * FROM additional_table WHERE additional_condition;"
-
-# Combine the arrays into a new array
-combined_queries = queries + indexqueries + [query_string]
-
-# Print the combined array
-print(combined_queries)
 
 

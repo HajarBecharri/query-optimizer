@@ -42,7 +42,7 @@ button:hover {
     align-items: center;
 }
 
-.results, .execution-plan {
+.results, .execution-plan,.Execution-time,.query-optimized {
     margin-top: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
